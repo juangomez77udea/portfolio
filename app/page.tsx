@@ -2,7 +2,8 @@
 
 import MainLayout from "@/app/components/templates/MainLayout";
 import LeftMenu from "@/app/components/organism/LeftMenu";
-import RightMenu from '@/app/components/organism/RigthMenu'
+import RightMenu from '@/app/components/organism/RigthMenu';
+import ContentCenter from "./components/organism/ContentCenter";
 
 export default function Home() {
   return (
@@ -12,7 +13,9 @@ export default function Home() {
           <LeftMenu />
         </div>
       }
-      center={<div>Contenido central</div>}
+      center={<div>
+        <ContentCenter />
+      </div>}
       right={<div>
         <RightMenu />
       </div>}

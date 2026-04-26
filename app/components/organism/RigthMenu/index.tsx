@@ -3,7 +3,7 @@ import CircleButton from '@/app/components/atoms/Buttons/CircleButton'
 
 const index = () => {
       return (
-            <div className="flex flex-col items-center gap-3 mt-20 pt-4 px-2 w-full">
+            <div className="flex flex-col items-center justify-start gap-3 pt-4 bg-white h-full w-full">
                   <div>
                         <h1 className="font-extrabold text-lg mb-6">Links</h1>
                   </div>

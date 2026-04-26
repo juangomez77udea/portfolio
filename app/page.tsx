@@ -16,9 +16,11 @@ export default function Home() {
       center={<div>
         <ContentCenter />
       </div>}
-      right={<div>
-        <RightMenu />
-      </div>}
+      right={
+        <div className="h-full bg-white">
+          <RightMenu />
+        </div>
+      }
     />
   );
 }

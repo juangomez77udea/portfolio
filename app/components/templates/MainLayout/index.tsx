@@ -10,7 +10,7 @@ const index = ({ left, center, right }: MainLayoutProps) => {
       return (
             <div className="flex h-screen w-full overflow-hidden">
 
-                  <aside className="w-[305px] h-screen shrink-0 overflow-y-auto">
+                  <aside className="w-76.25px h-screen shrink-0 overflow-y-auto">
                         {left}
                   </aside>
 
@@ -18,7 +18,7 @@ const index = ({ left, center, right }: MainLayoutProps) => {
                         {center}
                   </main>
 
-                  <aside className="w-[95px] h-screen shrink-0 overflow-y-auto">
+                  <aside className="w-20 h-screen shrink-0 overflow-y-auto bg-white flex flex-col">
                         {right}
                   </aside>
 

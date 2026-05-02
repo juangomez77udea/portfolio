@@ -17,7 +17,7 @@ export default function Home() {
         <ContentCenter />
       </div>}
       right={
-        <div className="h-full bg-white">
+        <div className="h-full bg-white dark:bg-secondary transition-colors duration-300">
           <RightMenu />
         </div>
       }

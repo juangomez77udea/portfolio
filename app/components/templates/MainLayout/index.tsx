@@ -18,7 +18,7 @@ const index = ({ left, center, right }: MainLayoutProps) => {
                         {center}
                   </main>
 
-                  <aside className="w-20 h-screen shrink-0 overflow-y-auto bg-white flex flex-col">
+                  <aside className="w-20 h-screen shrink-0 overflow-y-auto bg-white dark:bg-secondary flex flex-col">
                         {right}
                   </aside>
 

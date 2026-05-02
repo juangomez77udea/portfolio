@@ -3,45 +3,21 @@ import { LiaLaptopCodeSolid, LiaPaletteSolid, LiaMicrophoneAltSolid, LiaGamepadS
 import MiniContainer from '@/app/components/molecules/MiniContainer'
 
 const services = [
-      {
-            icon: <LiaLaptopCodeSolid />,
-            title: 'Web Development',
-            description: 'Blog, development, e-commerce',
-      },
-      {
-            icon: <LiaPaletteSolid />,
-            title: 'UI/UX Design',
-            description: 'Mobile App, Website Design',
-      },
-      {
-            icon: <LiaMicrophoneAltSolid />,
-            title: 'Sound Design',
-            description: 'Voice Over, Beat Making',
-      },
-      {
-            icon: <LiaGamepadSolid />,
-            title: 'Game Design',
-            description: 'Character Design, Props & Objects',
-      },
-      {
-            icon: <LiaCameraSolid />,
-            title: 'Images',
-            description: 'Portrait, Product Photography',
-      },
-      {
-            icon: <LiaPhoneSolid />,
-            title: 'Advertising',
-            description: 'birthday cards, announcements and events.',
-      },
+      { icon: <LiaLaptopCodeSolid />, title: 'Web Development', description: 'Blog, development, e-commerce' },
+      { icon: <LiaPaletteSolid />, title: 'UI/UX Design', description: 'Mobile App, Website Design' },
+      { icon: <LiaMicrophoneAltSolid />, title: 'Sound Design', description: 'Voice Over, Beat Making' },
+      { icon: <LiaGamepadSolid />, title: 'Game Design', description: 'Character Design, Props & Objects' },
+      { icon: <LiaCameraSolid />, title: 'Images', description: 'Portrait, Product Photography' },
+      { icon: <LiaPhoneSolid />, title: 'Advertising', description: 'birthday cards, announcements and events.' },
 ]
 
 const index = () => {
       return (
-            <div className='grid grid-cols-3 gap-10 m-10'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-10 m-4 md:m-6 lg:m-10'>
                   {services.map((service, i) => (
                         <MiniContainer
                               key={i}
-                              className='group items-center justify-center text-center w-full h-50 overflow-hidden hover:rounded-lg hover:bg-tertiary dark:bg-[#1e2a3a] dark:hover:bg-tertiary transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-110 hover:cursor-pointer'
+                              className='group items-center justify-center text-center w-full h-auto min-h-40 overflow-hidden hover:rounded-lg hover:bg-tertiary dark:bg-[#1e2a3a] dark:hover:bg-tertiary transition duration-150 ease-in-out hover:-translate-y-1 hover:scale-105 hover:cursor-pointer'
                         >
                               <span className='text-5xl text-primary group-hover:text-white transition duration-150'>{service.icon}</span>
                               <h3 className='font-bold text-base text-secondary dark:text-white group-hover:text-white transition duration-150'>{service.title}</h3>

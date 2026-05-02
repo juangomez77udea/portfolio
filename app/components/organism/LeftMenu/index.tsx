@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import MiniContainer from '@/app/components/molecules/MiniContainer';
 import SkillBar from '@/app/components/atoms/SkillBar';
-import DynamicIcon from '@/app/components/atoms/icons'
+import DynamicIcon from '@/app/components/atoms/Icons'
 import { FaRegClone } from 'react-icons/fa'
 
 const index = () => {
@@ -18,6 +18,7 @@ const index = () => {
                                     alt="Juan Carlos Gómez Jaramillo"
                                     className="rounded-full object-cover"
                                     fill
+                                    sizes='"150px'
                               />
                               <span className="absolute bottom-6 right-1 w-4 h-4 bg-tertiary rounded-full border-2 border-white dark:border-secondary" />
                         </div>

@@ -31,15 +31,15 @@ const degrees = [
 
 const index = () => {
       return (
-            <div className='flex flex-col w-full bg-white dark:bg-secondary transition-colors duration-300 p-10 px-30'>
+            <div className='flex flex-col w-full bg-white dark:bg-secondary transition-colors duration-300 p-4 md:p-8 lg:p-10'>
                   {degrees.map((degree) => (
                         <div key={degree.id}
-                              className='grid grid-cols-2 gap-8 py-6 border-b border-gray-200 dark:border-gray-700'
+                              className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 py-6 border-b border-gray-200 dark:border-gray-700'
                         >
                               {/* Columna izquierda */}
                               <div className='flex flex-col gap-3'>
                                     <TitleDegree text={degree.institution} />
-                                    <div className='flex items-center gap-3'>
+                                    <div className='flex flex-wrap items-center gap-3'>
                                           <span className='text-[15px] text-gray-500 dark:text-gray-400'>{degree.role}</span>
                                           <HighlightedText text={degree.date} color='#fff' background='#FFB400' />
                                     </div>

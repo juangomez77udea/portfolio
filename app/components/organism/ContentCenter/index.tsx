@@ -27,12 +27,12 @@ const ContentCenter = () => {
                   tags: ["HTML", "CSS", "JavaScript"]
             },
             {
-                  id:2,
-                  title:"Contador de Calorias - React",
-                  description:"Proyecto de un contador de calorias utilizando React.",
-                  imageUrl:"/calories.png",
-                  liveUrl:"https://charming-blancmange-9fc52e.netlify.app/",
-                  tags:["React", "Tailwind CSS", "TypeScript"]
+                  id: 2,
+                  title: "Contador de Calorias - React",
+                  description: "Proyecto de un contador de calorias utilizando React.",
+                  imageUrl: "/calories.png",
+                  liveUrl: "https://charming-blancmange-9fc52e.netlify.app/",
+                  tags: ["React", "Tailwind CSS", "TypeScript"]
             },
             {
                   id: 3,
@@ -125,7 +125,7 @@ const ContentCenter = () => {
       ]
 
       return (
-            <div className='flex flex-col w-full h-full px-10'>
+            <div className='flex flex-col w-full h-full px-4 md:px-6 lg:px-10 pb-20 lg:pb-0'>
 
                   <section className='w-full'>
                         <Hero />
@@ -152,12 +152,10 @@ const ContentCenter = () => {
                               title='Portfolio'
                               description='In this section you can see some of my projects.'
                         />
-                        <Carousel
-                              projects={projects} title="Mis Proyectos"
-                        />
+                        <Carousel projects={projects} title="Mis Proyectos" />
                   </section>
 
-                  <section className=' w-full'>
+                  <section className='w-full'>
                         <Footer />
                   </section>
 

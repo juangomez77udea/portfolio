@@ -22,7 +22,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       return (
             <div className="flex flex-col w-75 shrink-0 rounded-2xl overflow-hidden bg-white dark:bg-[#1e2a3a] border border-gray-100 dark:border-gray-700 shadow-sm hover:shadow-lg transition-all duration-300 group">
 
-                  {/* Image */}
                   <div className="relative w-full h-44 overflow-hidden bg-linear-to-br from-indigo-50 to-slate-100 dark:from-[#1a2535] dark:to-[#1e2a3a]">
                         {imgError ? (
                               <div className="w-full h-full flex items-center justify-center">
@@ -33,12 +32,12 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                                     src={project.imageUrl}
                                     alt={project.title}
                                     fill
+                                    sizes='(max-width: 768px) 100vw, 300px'
                                     className="w-full h-full object-contain object-center transition-transform duration-500 group-hover:scale-105"
                                     onError={() => setImgError(true)}
                               />
                         )}
 
-                        {/* Tags overlay */}
                         <div className="absolute bottom-0 left-0 right-0 px-3 py-2 flex gap-1.5 flex-wrap bg-linear-to-t from-black/40 to-transparent">
                               {project.tags.map((tag) => (
                                     <span
@@ -51,7 +50,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
                         </div>
                   </div>
 
-                  {/* Content */}
                   <div className="flex flex-col gap-2 p-4">
                         <h3 className="text-sm font-bold text-gray-900 dark:text-white leading-snug tracking-tight">
                               {project.title}

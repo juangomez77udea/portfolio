@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <MainLayout
       left={
-        <div className=" pr-6 justify-between">
+        <div className=" h-full">
           <LeftMenu />
         </div>
       }

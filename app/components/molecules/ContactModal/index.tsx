@@ -22,7 +22,6 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
             return () => document.removeEventListener('keydown', handleKey)
       }, [isOpen, onClose])
 
-      // Bloquea scroll del body
       useEffect(() => {
             document.body.style.overflow = isOpen ? 'hidden' : ''
             return () => { document.body.style.overflow = '' }
@@ -37,7 +36,6 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
                   aria-modal="true"
                   aria-label="Contacto"
             >
-                  {/* Backdrop */}
                   <div
                         className="absolute inset-0 bg-black/50 backdrop-blur-sm"
                         onClick={onClose}
@@ -68,7 +66,6 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
                               </button>
                         </div>
 
-                        {/* Contact items */}
                         <div className="flex flex-col gap-3 p-6">
                               <ContactItem
                                     icon={MdPhone}
@@ -112,7 +109,6 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
                               />
                         </div>
 
-                        {/* Footer */}
                         <div className="px-6 pb-6">
                               <a
                                     href="mailto:juangomez88@gmail.com"

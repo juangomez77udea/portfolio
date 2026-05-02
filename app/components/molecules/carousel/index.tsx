@@ -53,11 +53,10 @@ const Carousel = ({ projects, title, className = '' }: CarouselProps) => {
                                           <button
                                                 key={i}
                                                 onClick={() => goTo(i)}
-                                                className={`h-2 rounded-full transition-all duration-300 ${
-                                                      i === clampedIndex
+                                                className={`h-2 rounded-full transition-all duration-300 ${i === clampedIndex
                                                             ? 'w-5 bg-primary'
                                                             : 'w-2 bg-gray-300 dark:bg-gray-600 hover:bg-gray-400'
-                                                }`}
+                                                      }`}
                                                 aria-label={`Ir al slide ${i + 1}`}
                                           />
                                     ))}
